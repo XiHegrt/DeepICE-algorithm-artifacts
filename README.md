@@ -1,10 +1,17 @@
 # Deep-ICE: The first globally optimal algorithm for empirical risk minimization of two-layer maxout and ReLU networks (ICLR 26)
 
-Xi He [(email)](xihe@pku.edu.cn), Yi Miao, Max A Little 
 
-If you use DeepICE, please cite our paper:
+**Official Code & Artifacts** for the paper:
 
-Xi He, Yi Miao, Max A. Little. "Deep-ICE: The first globally optimal algorithm for empirical risk minimization of two-layer maxout and ReLU networks." The Fourteenth International Conference on Learning Representations (ICLR 26)
+> **Deep-ICE: the first globally optimal algorithm for minimizing 0-1 loss in two-layer ReLU and maxout networks**  
+> Xi He[(email)](xihe@pku.edu.cn), Yi Miao, Max A. Little  
+> ICLR 2026 | [arXiv:2505.05740](https://arxiv.org/abs/2505.05740)
+
+## 📌 About This Repository
+
+This repository contains the official implementation, code, data, and reproduction artifacts for the **Deep-ICE** algorithm presented in our ICLR 2026 paper.
+
+### Abstract
 
 **Deep-ICE** is the first *globally optimal* algorithm for empirical risk minimization in two-layer rank-$K$ maxout networks with one neurons—i.e., for minimizing the number of misclassifications in classification tasks. The algorithm has a worst-case time complexity of
 $$
@@ -14,7 +21,10 @@ where $N$ is the number of training examples, $D$ is the number of features, and
 
 Our experiments show that Deep-ICE computes **provably exact solutions** for small datasets. To scale to larger datasets, we propose a novel **coreset selection strategy** that iteratively reduces the dataset size, making exact optimization feasible. This hybrid approach yields **20–30% fewer misclassifications** on both training and test data compared to state-of-the-art methods such as neural networks trained via gradient descent and support vector machines—when applied to equivalent models (e.g., two-layer networks with fixed hidden units and linear models).
 
-
+### Key Features
+- Globally optimal solver for 0-1 loss minimization in two-layer ReLU / Maxout networks
+- CUDA implementation for high performance
+- Scripts to reproduce all experiments in the paper
 
 
 ## Algorithms

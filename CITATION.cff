@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code or artifacts in your research, please cite the following paper."
+title: "Deep-ICE: Official Implementation and Artifacts"
+authors:
+  - family-names: "He"
+    given-names: "Xi"
+    # affiliation: "Peking University"   # 可选
+  - family-names: "Miao"
+    given-names: "Yi"
+    # affiliation: "University of Birmingham"
+  - family-names: "Little"
+    given-names: "Max A."
+    # affiliation: "University of Birmingham"
+repository-code: "https://github.com/XiHegrt/DeepICE-algorithm-artifacts"
+url: "https://github.com/XiHegrt/DeepICE-algorithm-artifacts"
+license: MIT                                      # 改成你实际使用的许可证
+date-released: "2026-05-10"                       # 修改成你发布日期
+
+# 重点：让 GitHub “Cite this repository” 按钮优先显示论文
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "He"
+      given-names: "Xi"
+    - family-names: "Miao"
+      given-names: "Yi"
+    - family-names: "Little"
+      given-names: "Max A."
+  title: "Deep-ICE: the first globally optimal algorithm for minimizing 0-1 loss in two-layer ReLU and maxout networks"
+  url: "https://arxiv.org/abs/2505.05740"
+  year: 2026
+  journal: "The Fourteenth International Conference on Learning Representations (ICLR 26)"
+  publisher: "ICLR"
